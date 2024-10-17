@@ -25,4 +25,5 @@ model KirimEsp {
   id            Int @id @default(autoincrement())
   currentstate  Int
   delay         Int
+  createdAt     DateTime @default(now())
 }
