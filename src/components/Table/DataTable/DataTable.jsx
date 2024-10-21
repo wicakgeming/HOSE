@@ -11,7 +11,14 @@ const DataTable = () => {
   };
 
   useEffect(() => {
-    fetchData();
+    fetchData(); // Initial fetch
+
+    const refresh = setInterval(() => {
+      fetchData(); // Fetch every 2 seconds
+    }, 2000);
+
+    // Clean up the interval on component unmount
+    return () => clearInterval(refresh);
   }, []);
 
   return (
