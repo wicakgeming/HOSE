@@ -1,3 +1,14 @@
+HOW TO USE : 
+
+- npm install
+- buat database : - download laragon => mysql => buat database = 'hosedata' (wajib sama biar ngga usah ngubah apa apa)
+- npx prisma generate
+- npx prisma migrate dev
+- npm run dev
+
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
