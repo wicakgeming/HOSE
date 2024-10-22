@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import dayjs from 'dayjs';
 import { getDataResponse, postDataResponse } from '@/libs/api-libs';
 import Modal from './Modal';
+import Link from 'next/link';
 
 const SensorTable = () => {
     const [data, setData] = useState([]);
@@ -49,13 +50,14 @@ const SensorTable = () => {
                             <td className="px-4 py-2 text-center">
                                 {dayjs(data.createdAt).format('HH:mm:ss')}
                             </td>
-                            <td className="px-4 py-2 text-center">
+                            <td className="grid md:grid-cols-2 sm:grid-rows-1 gap-1 px-4 py-2 text-center mr-1">
                                 <button
                                     onClick={() => setIsModalOpen(true)}
-                                    className='p-2 bg-gray-700 rounded'
+                                    className='p-2 bg-gray-700 rounded hover:bg-gray-500'
                                 >
                                     Edit
                                 </button>
+                                <Link href="/sensor/tabel" className='p-2 bg-gray-700 rounded hover:bg-gray-500'>Lihat</Link>
                             </td>
                         </tr>
                     )}

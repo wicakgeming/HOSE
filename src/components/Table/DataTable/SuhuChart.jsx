@@ -25,7 +25,14 @@ const SuhuChart = () => {
   };
 
   useEffect(() => {
-    fetchData();
+    fetchData(); // Initial fetch
+
+    const refresh = setInterval(() => {
+      fetchData(); // Fetch every 2 seconds
+    }, 2000);
+
+    // Clean up the interval on component unmount
+    return () => clearInterval(refresh);
   }, []);
 
   const chartData = {
@@ -47,7 +54,7 @@ const SuhuChart = () => {
       legend: { display: false },
     },
     scales: {
-      x: { ticks: { color: '#FFFFFF' } },
+      x: { ticks: { color: '#FFFFFF' }, reverse: true },
       y: { ticks: { color: '#FFFFFF' }, beginAtZero: true },
     },
   };
