@@ -1,6 +1,6 @@
 import Navbar from "@/components/Navbar";
 // import localFont from "next/font/local";
-import { Gabarito } from 'next/font/google'
+import { Inter } from 'next/font/google'
 import "@/app/globals.css";
 
 // const geistSans = localFont({
@@ -13,8 +13,8 @@ import "@/app/globals.css";
 //   variable: "--font-geist-mono",
 //   weight: "100 900",
 // });
-
-const gabarito = Gabarito({subsets: ["latin"]})
+  
+const font = Inter({  weight: '400', subsets: ["latin"]})
 
 export const metadata = {
   title: "Hose",
@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${`${gabarito.classname} bg-gradient-to-r from-gradient1 via-gradient2 to-gradient3`} antialiased min-h-screen`}
+        className={`${`${font.classname} bg-gradient-to-r from-gradient1 via-gradient2 to-gradient3`} antialiased min-h-screen`}
       >
         <Navbar />
         {children}
