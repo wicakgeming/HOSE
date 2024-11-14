@@ -1,11 +1,15 @@
-import Header from "@/components/Home/Header";
+import Footer from "@/components/Home/Footer";
 import Home from "@/components/Home/Index";
+import Description from "@/components/Home/Description";
 
 export default function Page() {
   return (
-      <section>
-        <Header/>
-        <Home/>
-      </section>
+    <div className="flex flex-col min-h-screen">
+      <main className="flex-grow">
+        <Home />
+        <Description />
+      </main>
+      <Footer />
+    </div>
   );
 }
