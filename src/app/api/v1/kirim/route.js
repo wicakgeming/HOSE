@@ -6,7 +6,7 @@ export async function POST(request) {
         const body = await request.json();
         const { bpm, spo, suhu } = body;
 
-        // Lakukan validasi data jika diperlukan
+        // Lakukan validasi data jika diperlukan 
         if (!bpm || !spo || !suhu) {
         return NextResponse.json({ message: 'Missing required fields' }, { status: 400 });
         }

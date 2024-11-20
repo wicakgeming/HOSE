@@ -9,6 +9,23 @@ Content-Type: application/json
 
 ####
 
+GET http://localhost/php-api/api/get.php
+
+
+####
+
+
+POST http://localhost/php-api/api/post.php
+Content-Type: application/json
+
+{
+  "bpm": 120.5,
+  "spo": 75.2,
+  "suhu": 39.6
+}
+
+
+####
 GET http://localhost:3000/api/v1/data
 
 ####
@@ -24,3 +41,16 @@ Content-Type: application/json
 ####
 
 GET http://localhost:3000/api/v2/dataesp
+
+
+####
+
+POST http://localhost:3000/api/createusers
+Content-Type: application/json
+
+{
+  "name": "Admin",
+  "email": "admin2@gmail.com",
+  "password": "passwordadmin",
+  "role": "admin"
+}
