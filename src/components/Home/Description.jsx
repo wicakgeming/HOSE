@@ -27,14 +27,14 @@ const Description = () => {
     return (
         <>
             <section className="container mx-auto py-36 px-4">
-                <h2 className="text-2xl font-semibold text-center mb-8 text-white ">HOSE Advantages</h2>
+                <h2 className="text-2xl font-semibold text-center mb-8  ">HOSE Advantages</h2>
                 <div className="grid gap-6 md:grid-cols-3">
                     {articles.map((article, index) => (
-                        <div key={index} className="bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+                        <div key={index} className="bg-secondary rounded-lg shadow-lg overflow-hidden hover:opacity-95">
                             <img src={article.image} alt={article.title} className="w-full h-48 object-cover" />
                             <div className="p-4">
-                                <h3 className="mt-2 text-lg font-bold text-white">{article.title}</h3>
-                                <p className="mt-2 text-gray-400">{article.description}</p>
+                                <h3 className="mt-2 text-lg font-bold text-third ">{article.title}</h3>
+                                <p className="mt-2 text-third">{article.description}</p>
                                 {/* <button className="mt-4 inline-block px-4 py-2 bg-teal-500 text-white font-semibold rounded hover:bg-teal-600">
                                     Read More
                                 </button> */}

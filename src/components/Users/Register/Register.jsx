@@ -33,42 +33,42 @@ function Register() {
 
 
     return (
-        <div className="flex items-center justify-center min-h-screen ">
-        <div className="w-full max-w-md p-8 space-y-6 bg-gray-900 rounded-lg shadow-lg">
-            <h1 className="text-2xl font-bold text-center text-white">Register New User</h1>
+        <div className="flex items-center justify-center min-h-screen">
+        <div className="w-full max-w-md p-8 space-y-6 rounded-lg">
+            <h1 className="text-2xl font-bold text-center text-black">Register New User</h1>
             <form onSubmit={handleSubmit} className="space-y-4">
             <input
                 type="text"
                 placeholder="Name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                className="w-full p-3 text-white bg-gray-700 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full p-3 text-white bg-fourth rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
             <input
                 type="email"
                 placeholder="Email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="w-full p-3 text-white bg-gray-700 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full p-3 text-white bg-fourth rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
             <input
                 type="password"
                 placeholder="Password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="w-full p-3 text-white bg-gray-700 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full p-3 text-white bg-fourth rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
             <select
                 value={role}
                 onChange={(e) => setRole(e.target.value)}
-                className="w-full p-3 text-white bg-gray-700 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full p-3 text-gray-400 bg-fourth rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
             >
                 <option value="user">User</option>
                 {/* <option value="admin">Admin</option> */}
             </select>
             <button
                 type="submit"
-                className="w-full p-3 font-semibold text-white bg-blue-600 rounded hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full p-3 font-semibold text-white bg-primary rounded hover:bg-primary focus:outline-none focus:ring-2 focus:ring-blue-500"
             >
                 Register
             </button>

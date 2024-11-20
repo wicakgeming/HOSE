@@ -29,11 +29,11 @@ const SensorTable = () => {
 };
         
     return (
-        <div className="bg-gray-900 p-4 rounded-md">
+        <div className="bg-third p-4 rounded-md">
             <h2 className="text-white text-lg mb-4">Data Updated</h2>
-            <table className="min-w-full bg-gray-800">
+            <table className="min-w-full bg-third">
                 <thead>
-                    <tr className="text-gray-200">
+                    <tr className="text-black">
                         <th className="px-4 py-2">Sensor</th>
                         <th className="px-4 py-2">Kondisi</th>
                         <th className="px-4 py-2">Delay</th>
@@ -43,7 +43,7 @@ const SensorTable = () => {
                 </thead>
                 <tbody>
                     {data && (
-                        <tr key={data.id} className="text-gray-300 border-b border-gray-700">
+                        <tr key={data.id} className="text-black ">
                             <td className="px-4 py-2 text-center">esp1</td>
                             <td className="px-4 py-2 text-center">{data.currentstate}</td>
                             <td className="px-4 py-2 text-center">{data.delay}</td>
@@ -53,11 +53,11 @@ const SensorTable = () => {
                             <td className="grid md:grid-cols-2 sm:grid-rows-1 gap-1 px-4 py-2 text-center mr-1">
                                 <button
                                     onClick={() => setIsModalOpen(true)}
-                                    className='p-2 bg-gray-700 rounded hover:bg-gray-500'
+                                    className='p-2 bg-primary rounded hover:opacity-80 transition text-white hover:text-black'
                                 >
                                     Edit
                                 </button>
-                                <Link href="/sensor/tabel" className='p-2 bg-gray-700 rounded hover:bg-gray-500'>Lihat</Link>
+                                <Link href="/users/sensor/table" className='p-2 bg-primary rounded hover:opacity-80 transition text-white hover:text-black'>Lihat</Link>
                             </td>
                         </tr>
                     )}
