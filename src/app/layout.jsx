@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${`${font.classname} bg-gradient-to-r from-gradient1 via-gradient2 to-gradient3`} antialiased min-h-screen`}
+        className={`${`${font.classname} bg-third`} antialiased min-h-screen`}
       >
         <Navbar />
         {children}

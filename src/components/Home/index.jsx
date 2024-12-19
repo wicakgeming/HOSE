@@ -4,7 +4,7 @@ import oldpeople from "@/public/images/oldpeople.png"
 const Home = () => {
     return(
     <>
-        <div className="grid md:grid-cols-2 sm:grid-cols-1 items-center justify-center gap-8 mx-auto max-w-4xl text-white">
+        <div className="py-20 grid md:grid-cols-2 sm:grid-cols-1 items-center justify-center gap-8 mx-auto max-w-4xl ">
             <div className=""> 
                 <Image src={oldpeople} width={500} height={500} alt="old person using HOSE" className=""/>
             </div>

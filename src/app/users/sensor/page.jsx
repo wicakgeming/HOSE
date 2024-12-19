@@ -1,6 +1,6 @@
 "use client"
 
-import SensorTable from "@/components/Table/SensorTable/SensorTable"
+import SensorTable from "@/components/Sensor/SensorTable/SensorTable"
 
 const page = () => {
     return(

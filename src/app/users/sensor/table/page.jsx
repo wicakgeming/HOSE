@@ -1,9 +1,9 @@
 "use client"
 
-import BPMChart from "@/components/Table/DataTable/BPMChart";
-import SPOChart from "@/components/Table/DataTable/SPOChart";
-import SuhuChart from "@/components/Table/DataTable/SuhuChart";
-import DataTable from "@/components/Table/DataTable/DataTable";
+import BPMChart from "@/components/Sensor/DataTable/BPMChart";
+import SPOChart from "@/components/Sensor/DataTable/SPOChart";
+import SuhuChart from "@/components/Sensor/DataTable/SuhuChart";
+import DataTable from "@/components/Sensor/DataTable/DataTable";
 
 const page = () => {
     return (
