@@ -1,4 +1,4 @@
-import Navbar from "@/components/Navbar";
+import Navbar from "../components/Navbar";
 // import localFont from "next/font/local";
 import { Inter } from 'next/font/google'
 import "@/app/globals.css";
@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${`${font.classname} bg-third`} antialiased min-h-screen`}
+        className={`${`${font.classname} bg-third`} antialiased min-h-screen`}asdas
       >
         <Navbar />
         {children}
