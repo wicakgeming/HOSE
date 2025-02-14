@@ -1,6 +1,6 @@
-import Footer from "@/components/Home/Footer";
-import Home from "@/components/Home/Index";
-import Description from "@/components/Home/Description";
+import Footer from "../components/Home/Footer";
+import Home from "../components/Home/index";
+import Description from "../components/Home/Description";
 
 export default function Page() {
   return (
